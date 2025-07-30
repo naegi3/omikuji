@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>おみくじジャンプ</title>
+  <script>
+    window.onload = function() {
+      const urls = [
+        "https://nyanchigulab.wixsite.com/nyanlab/daikichi",
+        "https://nyanchigulab.wixsite.com/nyanlab/chukichi",
+        "https://nyanchigulab.wixsite.com/nyanlab/shoukichi",
+        "https://nyanchigulab.wixsite.com/nyanlab/suekichi",
+        "https://nyanchigulab.wixsite.com/nyanlab/kichi"
+      ];
+      const randomIndex = Math.floor(Math.random() * urls.length);
+      window.location.href = urls[randomIndex];
+    };
+  </script>
+</head>
+<body>
+  <p>おみくじを引いています…</p>
+</body>
+</html>
